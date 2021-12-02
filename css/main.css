@@ -8,7 +8,7 @@
 }
 
 html, body{
-    height: 100%;
+    height: max-content;
     width: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -23,20 +23,19 @@ html, body{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-rows: 15vh 70vh 15vh;
     gap: 10px 20px ;
     grid-template-areas: "h h" " m m " " f f";
 }
+
 
 /************** estilo cabeçalho ***************/
 header{
     /* grid-column: 1/3;  */
     grid-area: h;
-    background-color: yellow;
+    background-color: #636363;
     max-width: 100%;
-
 }
-
 .topo{
     margin: 0 15px;
     display: flex;
@@ -44,47 +43,65 @@ header{
     align-items: center;
 }
 .logo{
-    max-height: 100px;
+    max-height: 80px;
 }
 
-
-.barraBusca{
-    /* margin-top: auto; */
-    margin: auto 0 15px 0;
-    display: inline-flex;
-    justify-content: space-between;
-    padding: 5px 10px;
-    background-color: hotpink;
-    height: fit-content;
-    width: 250px;
-}
 
 /* perfil e login - usuário */
 .perfil{
-    /* margin-top: auto; */
-    align-content: center;
-    margin: auto 0 14px 0;
-    background-color: greenyellow;
-    max-width: 70px;
-    /* text-align: center; */
+    max-width: 160px;
+    height: max-content;
+    padding: 12px 0px;
 }
-.perfil img{
-    height: 30px;
-    border-radius: 100%;
-    
+.perfil a{
+    padding: 12px 10px;
+    justify-content: space-between;
+    color: black;
+    background-color: #636363;
 }
+.perfil a:last-child{
+    background-color: #fbe281;
+}
+
+/* barra de buscas */
+.container_barraBusca{
+    height: fit-content;
+}
+.barraBusca{
+    margin: 0 auto;
+    max-width: fit-content;  
+    margin-bottom: 6px;
+    background-color: white;
+}
+.barraBusca input{
+    height: 25px;
+    width: 350px;
+    border: none;
+}
+.barraBusca button{
+    border: none;
+    padding: 0 5px;
+    height: 25px;
+}
+
 
 /* menu de navegação */
 .menuNav{
-    width: max-content;
-    margin: 0 auto;
+    text-align: center;
+    bottom: 0;
     padding: 10px;
-    background-color: indigo;
-    
+    /* background-color: #98c483; */
+    background-color: #c2c2c2;
 }
 .menuNav li{
     padding: 0 10px;
     display: inline-block;
+    /* border-right: 1px #71b187 solid; */
+    border-right: 1px #636363 solid;
+
+}
+.menuNav li:last-child{
+    border-right: none;
 }
 .menuNav li a{
     color: ivory;
@@ -95,10 +112,10 @@ header{
 
 main {
     /* grid-column: 2/3; */
-    max-width: 1110px;
+    max-width: 100%;
     grid-area: m;
     height: auto;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 /* lista de novos cadastros */
@@ -108,32 +125,40 @@ main {
 }
 
 .listaLivros{
+    max-width: 100%;
     background-color: #9db0a363;
     display: flex;
     align-items: baseline;
-    overflow-x: scroll;
+    overflow-x: auto;
+    padding-top: 15px;
+    height: 280px;
 }
 
 .containerListas h1{
-    padding-top: 15px;
+    font-weight: 600;
+    color: rgb(48, 48, 48);
+    padding: 0 5px;
 }
 
 .listaLivros il{
     margin: 0 53px 0 10px;
-    padding: 0;
 }
 .listaLivros il img{
     width: 125px;
 }
-
+.listaLivros h3{
+    font-size: 12pt;
+}
+.listaLivros il p{
+    font-size: 9pt;
+}
 footer{
     /* grid-column: 1/3;*/
     grid-area: f;
-    height: 100px;
-    background-color: rgb(180, 61, 61)
+    bottom: 0;
+    background-color: rgb(141, 150, 143);
 }
 .linkPlanejamento{
-    font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
     text-align: center;
 }

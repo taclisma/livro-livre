@@ -15,19 +15,22 @@
             <div class="topo">
                 <!-- logo -->
                 <img class="logo" src="/img/logo.png" alt="logo Livro Livre">
-                
-                <!-- barra de busca -->
-                <div class="barraBusca">
-                    <input type="text">
-                    <button>buscar</button>
-                </div>
-                
+
                 <!-- perfil -->
                 <div class="perfil">
-                    <img src="/img/default.jpg" alt="foto do usuário">
+                    <!-- <img src="/img/default.jpg" alt="foto do usuário"> -->
+                    <a href="">registrar</a>
                     <a href="">login</a>
                 </div>
             </div>
+            
+            <!-- barra de busca -->
+            <div class="container_barraBusca">
+                <div class="barraBusca">
+                    <input  type="text">
+                    <button>buscar</button>
+                </div>
+            </div>                
                 
             <!-- navegação -->
             <nav class="menuNav">
@@ -44,7 +47,7 @@
         <main>
             <section>
                 <!-- lista de ultimos livros cadastrados pelos usuários -->
-                <div class="containerListas">
+                <div id="lista_novosCadastros" class="containerListas">
                     <h1>Novos cadastros</h1>
                     <ul class="listaLivros">
                         <il>
@@ -87,25 +90,10 @@
                             <h3>titulo</h3>
                             <p>autor autor</p>
                         </il>
-                        <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
-                        </il>
-                        <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
-                        </il>
-                        <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
-                        </il>
                     </ul>
                 </div>
 
-                <div class="containerListas">
+                <div id="lista_ultimasTrocas" class="containerListas">
                     <h1>Ultimas trocas</h1>
                     <ul class="listaLivros">
                         <il>
