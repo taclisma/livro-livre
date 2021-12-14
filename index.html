@@ -5,6 +5,7 @@
     <title>projeto final</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href="css/main.css">
+    <script src="https://kit.fontawesome.com/453424cf6d.js" crossorigin="anonymous"></script>
     <!-- <script src='main.js'></script> -->
 </head>
 <body>
@@ -14,21 +15,22 @@
         <header>
             <div class="topo">
                 <!-- logo -->
-                <img class="logo" src="img/logo.png" alt="logo Livro Livre">
+                <img class="logo" src="img/LL_modelo_2.png" alt="logo Livro Livre">
 
                 <!-- perfil -->
                 <div class="perfil">
                     <!-- <img src="/img/default.jpg" alt="foto do usuário"> -->
-                    <a href="">registrar</a>
-                    <a href="">login</a>
+                    <a href="">cadastrar</a>
+                    <a href="">entrar</a>
                 </div>
             </div>
             
             <!-- barra de busca -->
             <div class="container_barraBusca">
                 <div class="barraBusca">
-                    <input  type="text">
-                    <button>buscar</button>
+                    <input  type="text" placeholder=" Buscar">
+                    <!-- <button>buscar</button> -->
+                    <i class="fas fa-search"></i>
                 </div>
             </div>                
                 
@@ -52,104 +54,124 @@
                     <ul class="listaLivros">
                         <il>
                             <img src="img/livro-Pedra-Filosofal.jpg">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <h3>Harry Potter e a Pedra Filosofal</h3>
+                            <p>J.K. Rowling</p>
                         </il>
                         <il>
                             <img src="img/livro-A-iliada.jpg">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <h3>A ilíada</h3>
+                            <p>Homero</p>
                         </il>
                         <il>
                             <img src="img/livro-Deselvolvimento-software.jpg">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <h3>Desenvolvimento de Software I: Conceitos Básicos </h3>
+                            <p> Fabio Okuyama</p>
                         </il>
                         <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <img src="img/livro-cem-anos.jpg">
+                            <h3>Cem Anos de Solidão</h3>
+                            <p>García Márquez</p>
                         </il>
                         <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <img src="img/livro-dom-casmurro.jpg">
+                            <h3>Dom Casmurro</h3>
+                            <p>Machado de Assis</p>
                         </il>
                         <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <img src="img/livro-metamorfose.JPG">
+                            <h3>A Metamorfose</h3>
+                            <p>Franz Kafka</p>
                         </il>
                         <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <img src="img/livro-interpretacao-sonhos.jpg">
+                            <h3>A interpretação dos sonhos</h3>
+                            <p>Sigmund Freud</p>
                         </il>
                         <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <img src="img/livro-dom-quixote.jpg">
+                            <h3>Dom Quixote</h3>
+                            <p>Miguel de Cervantes</p>
                         </il>
                     </ul>
                 </div>
 
                 <div id="lista_ultimasTrocas" class="containerListas">
                     <h1>Ultimas trocas</h1>
-                    <ul class="listaLivros">
+                    <ul class="listaTrocas">
                         <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <div class="livro">
+                                <img src="img/livro-o-mundo-assombrado.JPG">
+                                <h3>O mundo assombrado por demônios </h3>
+                                <p>Carl Sagan</p>
+                            </div>
+                            <div class="container_iconeTroca">
+                                <i id="iconeTroca" class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="livro">
+                                <img src="img/livro-eram-os-deuses.jpg">
+                                <h3>Eram os deuses astronautas</h3>
+                                <p>Erich von Daniken</p>
+                            </div>
                         </il>
                         <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <div class="livro">
+                                <img src="img/livro-historia-da-sua-vida.JPG">
+                                <h3>História da sua vida e outros contos</h3>
+                                <p>Ted Chiang</p>
+                            </div>
+                            <div class="container_iconeTroca">
+                                <i id="iconeTroca" class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="livro">
+                                <img src="img/livro-ubik.JPG">
+                                <h3>Ubik</h3>
+                                <p>Philip K. Dick</p>
+                            </div>
                         </il>
                         <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <div class="livro">
+                                <img src="img/livro-ficcoes.JPG">
+                                <h3>Ficções</h3>
+                                <p>Jorge Luis Borges</p>
+                            </div>
+                            <div class="container_iconeTroca">
+                                <i id="iconeTroca" class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="livro">
+                                <img src="img/livro-rei-amarelo.JPG">
+                                <h3>O rei de amarelo</h3>
+                                <p>Robert Chambers</p>
+                            </div>
                         </il>
                         <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <div class="livro">
+                                <img src="img/livro-candido.JPG">
+                                <h3>Candido, ou o otimismo</h3>
+                                <p>Voltaire</p>
+                            </div>
+                            <div class="container_iconeTroca">
+                                <i id="iconeTroca" class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="livro">
+                                <img src="img/livro-castelo-animado.JPG">
+                                <h3>O castelo animado</h3>
+                                <p>Diana Wynne Jones</p>
+                            </div>
                         </il>
                         <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
-                        </il>
-                        <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
-                        </il>
-                        <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
-                        </il>
-                        <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
-                        </il>
-                        <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
-                        </il>
-                        <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
-                        </il>
-                        <il>
-                            <img src="img/livro-Qualquer.JPG">
-                            <h3>titulo</h3>
-                            <p>autor autor</p>
+                            <div class="livro">
+                                <img src="img/livro-vidas-secas.JPG">
+                                <h3>Vidas Secas</h3>
+                                <p>Graciliamo Ramos</p>
+                            </div>
+                            <div class="container_iconeTroca">
+                                <i id="iconeTroca" class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="livro">
+                                <img src="img/livro-sagarana.JPG">
+                                <h3>Sagarama</h3>
+                                <p>João Guimarães Rosa</p>
+                            </div>
                         </il>
                     </ul>
                 </div>
@@ -160,7 +182,7 @@
         
         <!-- inicio rodapé -->
         <footer>
-            <a href="#">contato</a>
+            <a href="/paginas/contato.hmtl">contato</a>
         </footer>
         <!-- fim rodapé -->
     </div>
