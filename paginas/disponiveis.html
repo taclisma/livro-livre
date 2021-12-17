@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    
+    <meta charset='utf-8'>
+    <title>Livro Livre</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="../css/main.css">
+    <script src="https://kit.fontawesome.com/453424cf6d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- inicio cabeçalho -->
+        <header>
+            <div class="topo">
+                <!-- logo -->
+                <img class="logo" src="../img/LL_modelo_2.png" alt="logo Livro Livre">
+
+                <!-- perfil -->
+                <div class="perfil">
+                    <!-- <img src="/img/default.jpg" alt="foto do usuário"> -->
+                    <a href="">cadastrar</a>
+                    <a href="">entrar</a>
+                </div>
+            </div>
+            
+            <!-- barra de busca -->
+            <div class="container_barraBusca">
+                <div class="barraBusca">
+                    <input  type="text" placeholder=" Buscar">
+                    <!-- <button>buscar</button> -->
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>                
+                
+            <!-- navegação -->
+            <nav class="menuNav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../paginas/disponiveis.html">Livros disponíveis</a></li>
+                    <li><a href="../paginas/sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- fim cabeçalho -->
+        
+        <!-- inicio conteudo -->
+        <main id class="livros">
+                <!-- lista de livros disponíveis para troca e empréstimo -->
+
+                <h1>Livros disponíveis</h1>
+                <div id="filtro" class="filtro">
+                    <div class="itens">
+                        <button onclick="filtroUm()" id="btnTrocaUm" class="btnTrocaUm"> <h2>Exibir</h2> 
+                            <ul class="listaUm" id="listaUm">
+                                <li><a href="../paginas/disponiveis.html">Recentes</a></li>  
+                                <li><a href="../paginas/disponiveis.html">Antigos</a></li> 
+                                <li><a href="../paginas/disponiveis.html">A-Z</a></li>
+                                <li><a href="../paginas/disponiveis.html">Z-A</a></li>
+                            </ul>
+                        </button>
+                        <button onclick="filtroDois()" id="btnTrocaDois" class="btnTrocaDois"> <h2>Técnico</h2> 
+                            <ul class="listaDois" id="listaDois">
+                                <li><a href="../paginas/disponiveis.html">Adminitração</a></li>
+                                <li><a href="../paginas/disponiveis.html">Psicologia</a></li>
+                                <li><a href="../paginas/disponiveis.html">Tecnologia da Informação</a></li>
+                            </ul>
+                        </button>
+                        <button onclick="filtroTres()" id="btnTrocaTres" class="btnTrocaTres"> <h2>Literatura</h2> 
+                            <ul class="listaTres" id="listaTres">
+                               <li><a href="../paginas/disponiveis.html">Terror</a></li>  
+                               <li><a href="../paginas/disponiveis.html">Ficção</a></li>
+                               <li><a href="../paginas/disponiveis.html">Poesia</a></li>
+                               <li><a href="../paginas/disponiveis.html">Romance</a></li>
+                            </ul>
+                        </button>
+                        <button onclick="filtroQuat()" id="btnTrocaQuat" class="btnTrocaQuat"> <h2>Modo</h2> 
+                            <ul class="listaQuat" id="listaQuat">
+                                <li><a href="../paginas/disponiveis.html">Troca</a></li>
+                                <li><a href="../paginas/disponiveis.html">Empréstimo</a></li>
+                            </ul>
+                        </button>
+                        <script src="../script/filtro.js"></script>
+                    </div>  
+                </div>
+                <div id="lista_livrosDisponiveis" class="disponiveis">
+                    <ul class="listaDisponiveis">
+                        <li>
+                            <a href="../paginas/pagLivro.html"> <img  src="../img/livro-cem-anos.jpg"> </a>
+                            <h3>Cem anos de solidão</h3>
+                            <p>Gabriel García-Márquez</p>
+                        </li>
+                        <li>
+                           <a href=" "> <img  src="../img/livro-A-iliada.jpg"> </a>
+                            <h3>A ilíada</h3>
+                            <p>Homero</p>
+                        </li>
+                        <li>
+                            <a href=" "> <img  src="../img/livro-Pedra-Filosofal.jpg"> </a>
+                            <h3>Harry Potter e a Pedra Filosofal</h3>
+                            <p>J.K. Rowling</p>
+                        </li>
+                        <li>
+                            <a href=" "> <img  src="../img/livro-Deselvolvimento-software.jpg"> </a>
+                            <h3>Desenvolvimento de Software I: Conceitos Básicos</h3>
+                            <p>Fabio Okuyama</p>
+                        </li>
+                    </ul>
+                    <ul class="listaDisponiveis">
+                        <li>
+                            <a href=" "> <img  src="../img/livro-dom-casmurro.jpg"> </a>
+                            <h3>Dom Casmurro</h3>
+                            <p>Machado de Assis</p>
+                        </li>
+                        <li>
+                            <a href=" "> <img  src="../img/livro-metamorfose.JPG"> </a>
+                            <h3>A Metamorfose</h3>
+                            <p>Franz Kafka</p>
+                        </li>
+                        <li>
+                            <a href=" "> <img  src="../img/livro-dom-quixote.jpg"> </a>
+                            <h3>Dom Quixote</h3>
+                            <p>Miguel de Cervantes</p>
+                        </li>
+                        <li>
+                            <a href=" "> <img  src="../img/livro-o-mundo-assombrado.JPG"> </a>
+                            <h3>O mundo assombrado por demônios</h3>
+                            <p>Carl Sagan</p>
+                        </li>
+                    </ul>
+                    <ul class="listaDisponiveis">
+                        <li>
+                            <a href=" "> <img  src="../img/livro-historia-da-sua-vida.JPG"> </a>
+                            <h3>História da sua vida e outros contos</h3>
+                            <p>Ted Chiang</p>
+                        </li>
+                        <li>
+                            <a href=" "> <img  src="../img/livro-sagarana.JPG"> </a>
+                            <h3>Sagarama</h3>
+                            <p>João Guimarães Rosa</p>
+                        </li>
+                        <li>
+                            <a href=" "> <img  src="../img/livro-vidas-secas.JPG"> </a>
+                            <h3>Vidas Secas</h3>
+                            <p>Graciliamo Ramos</p>
+                        </li>
+                        <li>
+                            <a href=" "> <img  src="../img/livro-castelo-animado.JPG"> </a>
+                            <h3>O castelo animado</h3>
+                            <p>Diana Wynne Jones</p>
+                        </li>
+                    </ul>
+                </div>
+               <!-- tabela para filtragem dos livros disponíveis --> 
+               
+             
+      
+        </main>
+        <!-- fim conteudo principal -->
+        
+    
+        <!-- inicio rodapé -->
+        <footer>
+            <div class="footerInfo">
+                <div class="footerIcones">
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                </div>
+                <br>
+                <a href="/paginas/contato.hmtl">Contato</a>
+                <a href=" ">Termos de uso</a>
+                <a href=" ">Política de privacidade</a>
+            </div>
+        </footer>
+        <!-- fim rodapé -->
+    </div>
+    </body>
+    </html>
+    
+
+ <!-- 
+ -->

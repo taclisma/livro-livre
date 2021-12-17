@@ -1,13 +1,14 @@
 
 
 <!DOCTYPE html>
-<html>
+<html lang="Pt-Br">
 <head>
+    
     <meta charset='utf-8'>
-    <title>projeto final</title>
+    <title>Sobre Livro Livre</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href="../css/main.css">
-    <!-- <script src='main.js'></script> -->
+    <script src="https://kit.fontawesome.com/453424cf6d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- container -->
@@ -16,21 +17,22 @@
         <header>
             <div class="topo">
                 <!-- logo -->
-                <img class="logo" src="/img/logo.png" alt="logo Livro Livre">
+                <img class="logo" src="../img/LL_modelo_2.png" alt="logo Livro Livre">
 
                 <!-- perfil -->
                 <div class="perfil">
                     <!-- <img src="/img/default.jpg" alt="foto do usuário"> -->
-                    <a href="">registrar</a>
-                    <a href="">login</a>
+                    <a href="">cadastrar</a>
+                    <a href="">entrar</a>
                 </div>
             </div>
             
             <!-- barra de busca -->
             <div class="container_barraBusca">
                 <div class="barraBusca">
-                    <input  type="text">
-                    <button>buscar</button>
+                    <input  type="text" placeholder=" Buscar">
+                    <!-- <button>buscar</button> -->
+                    <i class="fas fa-search"></i>
                 </div>
             </div>                
                 
@@ -38,26 +40,66 @@
             <nav class="menuNav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="paginas/">Livros disponíveis</a></li>
-                    <li><a href="../paginas/sobre.html">Sobre o projeto</a></li>
+                    <li><a href="../paginas/disponiveis.html">Livros disponíveis</a></li>
+                    <li><a href="../paginas/sobre.html">Sobre</a></li>
                 </ul>
             </nav>
         </header>
         <!-- fim cabeçalho -->
         
         <!-- inicio conteudo principal -->
-        <main>
-            <section>
-                <!-- lista de ultimos livros cadastrados pelos usuários -->
-
-
+        
+            <section class="sidenav">
+                <div class="wrapSidenav">
+                    <a href="#sobreProjeto">Sobre o projeto</a><br>
+                    <a href="#comoFunciona">Como funciona</a><br>
+                    <a href="#superFacil">É super simples</a><br>
+                    <a href="#quemSomos">Quem somos</a>
+                </div>
             </section>
+        <main class="scrollPags">
+            <div id="sobreProjeto" class="sessao">
+                <p>
+                    O <span class="bold">Livro Livre</span> é um site sem fins comerciais que visa fomentar a leitura através de uma dinâmica de trocas e empréstimos entre seus usuários cadastrados, criando uma comunidade de leitores participativos e que com um interesse em comum: compartilhar histórias e conhecimento.<br><br>
+                    O projeto nasceu da vontade de fazer o conhecimento circular através do consumo colaborativo, da forma mais econômica e sustentável possível. Precisando renovar a estante? Aqui oferecemos gratuitamente uma forma de movimentar e atualizar seu acervo. O nosso objetivo é que os livros não fiquem parados na estante acumulando poeira, mas que sejam livros livres!<br><br>
+                    Por  enquanto, o site destina-se à troca de conhecimento entre a comunidade acadêmica do Campus Porto Alegre do IFRS, mas em breve os livros livres estarão disponíveis em outras paradas! Aguarde.
+                </p>
+            </div>
+            <div id="comoFunciona" class="sessao">
+                <p>
+                    Veja como é fácil: após cadastrar-se no site, o usuário é convidado a montar sua estante aqui no site com os livros que deseja colocar para troca ou empréstimo. Em seguida, poderá fazer buscas por títulos de seu interesse e conectar-se com outros usuários que desejam fazer trocas. As trocas são combinadas diretamente entre os usuários e confirmadas no site, onde é possível avaliar trocadores, gerando uma reputação na plataforma.<br><br> 
+                    Dicas de segurança: como as trocas são feitas presencialmente, sugerimos fortemente que marque sua troca sempre em locais públicos movimentados e em horário comercial.<br><br>
+                    Em breve, o site disponibilizará a opção de envio pelos Correios, através da modalidade de envio Impresso normal com registro módico - forma de envio mais em conta e específica para livros.
+                </p>
+            </div>
+            <div id="superFacil" class="sessao">
+                <img src="/img/comofunciona.gif">
+            </div>
+            <div id="quemSomos" class="sessao">
+                <p>
+                    Somos estudantes do curso de Tecnologia em Sistemas para Internet do IFRS,  Campus Porto Alegre, e embarcamos nesse projeto a partir da disciplina de Construção de Páginas Web I, ministrada pelo professor Evandro Manara Miletto no segundo semestre de 2021.
+                    <br><br>
+                    <span class="bold">Programadores:</span> Bruno Otávio Souza de Ávila e Mikaela da Silva Machado<br>
+                    <span class="bold">Web designer:</span> Mariana Ferro<br>
+                    <span class="bold">Analista de conteúdos:</span> Gabrielle Bazacas Cabral
+
+                </p>
+            </div>
         </main>
         <!-- fim conteudo principal -->
         
         <!-- inicio rodapé -->
         <footer>
-            <a href="">contato</a>
+            <div class="footerInfo">
+                <div class="footerIcones">
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                </div>
+                <br>
+                <a href="/paginas/contato.hmtl">Contato</a>
+                <a href="#">Termos de uso</a>
+                <a href="#">Política de privacidade</a>
+            </div>
         </footer>
         <!-- fim rodapé -->
     </div>
