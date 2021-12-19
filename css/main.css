@@ -179,7 +179,7 @@ header{
     max-width: 100%;
     display: flex;
     align-items: baseline;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scrollbar-width: none;
     padding-top: 5px;
@@ -194,7 +194,7 @@ header{
     max-width: 100%;
     align-items: baseline;
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scrollbar-width: none;
     padding-top: 15px;
@@ -459,6 +459,7 @@ margin: 0 5px;
     height: 540px;
     background-color: #a5a6f694;
     overflow-y: scroll;
+    overflow-x: hidden;
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
