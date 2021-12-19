@@ -331,7 +331,10 @@ margin: 0 5px;
     flex-direction: column-reverse;
     align-items: center;
 }
-
+.filtro p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 .itens{
     display: flex;
     align-content: center;
@@ -378,6 +381,9 @@ margin: 0 5px;
     padding: 40px; 
     display: flex;
     flex-direction: line;
+}
+.dadosLivro img{
+    width:300px;
 }
 .informacoes{
     margin-top: 150px;
